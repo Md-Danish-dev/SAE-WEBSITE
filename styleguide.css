@@ -1,0 +1,64 @@
+:root {
+  --airstrike-31-25-font-family: "Airstrike", Helvetica;
+  --airstrike-31-25-font-size: 31.25px;
+  --airstrike-31-25-font-style: normal;
+  --airstrike-31-25-font-weight: 400;
+  --airstrike-31-25-letter-spacing: 0px;
+  --airstrike-31-25-line-height: normal;
+  --airstrike-48-83-font-family: "Airstrike", Helvetica;
+  --airstrike-48-83-font-size: 48.83000183105469px;
+  --airstrike-48-83-font-style: normal;
+  --airstrike-48-83-font-weight: 400;
+  --airstrike-48-83-letter-spacing: 0.9766000366210937px;
+  --airstrike-48-83-line-height: normal;
+  --basewhite: rgba(255, 255, 255, 1);
+  --body-bold-20-font-family: "Open Sans", Helvetica;
+  --body-bold-20-font-size: 20px;
+  --body-bold-20-font-style: normal;
+  --body-bold-20-font-weight: 800;
+  --body-bold-20-letter-spacing: 0px;
+  --body-bold-20-line-height: normal;
+  --body-bold-25-font-family: "Open Sans", Helvetica;
+  --body-bold-25-font-size: 25px;
+  --body-bold-25-font-style: normal;
+  --body-bold-25-font-weight: 800;
+  --body-bold-25-letter-spacing: 0px;
+  --body-bold-25-line-height: normal;
+  --body-regular-16-font-family: "Open Sans", Helvetica;
+  --body-regular-16-font-size: 16px;
+  --body-regular-16-font-style: normal;
+  --body-regular-16-font-weight: 400;
+  --body-regular-16-letter-spacing: 0px;
+  --body-regular-16-line-height: normal;
+  --body-regular-20-font-family: "Open Sans", Helvetica;
+  --body-regular-20-font-size: 20px;
+  --body-regular-20-font-style: normal;
+  --body-regular-20-font-weight: 400;
+  --body-regular-20-letter-spacing: 0px;
+  --body-regular-20-line-height: normal;
+  --body-regular-25-font-family: "Open Sans", Helvetica;
+  --body-regular-25-font-size: 25px;
+  --body-regular-25-font-style: normal;
+  --body-regular-25-font-weight: 400;
+  --body-regular-25-letter-spacing: 0px;
+  --body-regular-25-line-height: normal;
+  --grey-80: rgba(204, 204, 204, 1);
+  --primaryaccentred: rgba(215, 38, 61, 1);
+  --primaryblue: rgba(39, 128, 186, 1);
+}
+
+/* Ensure Airstrike font is properly applied */
+.igniting-passion-for,
+.text-wrapper-8,
+.text-wrapper-10,
+.text-wrapper-11 {
+  font-family: "Airstrike", Helvetica !important;
+}
+
+/* Ensure Open Sans font is properly applied to navigation */
+.text-wrapper-4,
+.text-wrapper-5,
+.text-wrapper-6,
+.text-wrapper-7 {
+  font-family: "Open Sans", Helvetica !important;
+}

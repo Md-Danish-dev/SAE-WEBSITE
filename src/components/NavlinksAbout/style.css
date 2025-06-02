@@ -1,0 +1,75 @@
+.navlinks-about {
+  height: 40px;
+  position: relative;
+  width: 89px;
+}
+
+.navlinks-about .text-wrapper-4 {
+  left: 16px;
+  position: absolute;
+  text-align: center;
+}
+
+.navlinks-about .line {
+  position: absolute;
+  width: 80px;
+}
+
+.navlinks-about.default {
+  overflow: hidden;
+}
+
+.navlinks-about.click {
+  overflow: hidden;
+}
+
+.navlinks-about.hover .text-wrapper-4 {
+  color: #ffffff;
+  font-family: "Open Sans", Helvetica;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 30px;
+  top: 6px;
+}
+
+.navlinks-about.default .text-wrapper-4 {
+  color: #ffffff;
+  font-family: "Open Sans", Helvetica;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 30px;
+  top: 6px;
+}
+
+.navlinks-about.click .text-wrapper-4 {
+  color: var(--primaryblue);
+  font-family: "Open Sans", Helvetica;
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 30px;
+  top: 4px;
+  white-space: nowrap;
+}
+
+.navlinks-about.hover .line {
+  height: 2px;
+  left: 5px;
+  top: 37px;
+}
+
+.navlinks-about.default .line {
+  height: 1px;
+  left: -4081px;
+  top: -6933px;
+}
+
+.navlinks-about.click .line {
+  height: 1px;
+  left: -4081px;
+  top: -7053px;
+}

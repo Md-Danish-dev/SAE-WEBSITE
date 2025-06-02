@@ -1,0 +1,41 @@
+.navlinks-team {
+  height: 40px;
+  position: relative;
+  width: 89px;
+}
+
+.navlinks-team .text-wrapper-5 {
+  color: #ffffff;
+  font-family: "Open Sans", Helvetica;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  left: 18px;
+  letter-spacing: 0;
+  line-height: 30px;
+  position: absolute;
+  text-align: center;
+  top: 4px;
+  white-space: nowrap;
+}
+
+.navlinks-team .line-2 {
+  position: absolute;
+  width: 80px;
+}
+
+.navlinks-team.property-1-1-default {
+  overflow: hidden;
+}
+
+.navlinks-team.property-1-1-hover .line-2 {
+  height: 2px;
+  left: 5px;
+  top: 37px;
+}
+
+.navlinks-team.property-1-1-default .line-2 {
+  height: 1px;
+  left: -4229px;
+  top: -6933px;
+}
