@@ -1,0 +1,55 @@
+.frame {
+  align-items: center;
+  display: flex;
+  gap: 545px;
+  position: relative;
+  width: 1128px;
+}
+
+@media (max-width: 1200px) {
+  .frame {
+    width: 100%;
+    gap: 20%;
+    justify-content: space-between;
+  }
+}
+
+.frame .SAE-IITR-2 {
+  height: 90px;
+  position: relative;
+  width: 134px;
+}
+
+@media (max-width: 768px) {
+  .frame .SAE-IITR-2 {
+    height: auto;
+    width: 100px;
+  }
+}
+
+.frame .div-2 {
+  align-items: flex-start;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 26px;
+  position: relative;
+}
+
+@media (max-width: 768px) {
+  .frame {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .frame .div-2 {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .frame .div-2 {
+    gap: 10px;
+  }
+}
