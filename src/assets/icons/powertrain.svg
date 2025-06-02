@@ -1,0 +1,13 @@
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="-0.5" y="0.5" width="13" height="3" transform="matrix(-1 0 0 1 31 30)" fill="#CFCFCF" stroke="#CFCFCF"/>
+<rect x="-0.5" y="0.5" width="1" height="11" transform="matrix(-1 0 0 1 17 26)" stroke="#CFCFCF"/>
+<rect x="9" y="20.5" width="7" height="23" rx="0.5" stroke="#CFCFCF"/>
+<line x1="11" y1="20" x2="11" y2="44" stroke="#CFCFCF" stroke-dasharray="3 1"/>
+<line x1="14" y1="20" x2="14" y2="44" stroke="#CFCFCF" stroke-dasharray="3 1"/>
+<rect x="32.5" y="30.5" width="13" height="3" fill="#CFCFCF" stroke="#CFCFCF"/>
+<rect x="46.5" y="26.5" width="1" height="11" stroke="#CFCFCF"/>
+<rect x="-0.5" y="0.5" width="7" height="23" rx="0.5" transform="matrix(-1 0 0 1 54.5 20)" stroke="#CFCFCF"/>
+<line y1="-0.5" x2="24" y2="-0.5" transform="matrix(0 1 1 0 53.5 20)" stroke="#CFCFCF" stroke-dasharray="3 1"/>
+<line y1="-0.5" x2="24" y2="-0.5" transform="matrix(0 1 1 0 50.5 20)" stroke="#CFCFCF" stroke-dasharray="3 1"/>
+<path d="M39 31.5C39 32.8212 38.2708 34.0596 37.0076 34.9859C35.7448 35.912 33.9759 36.5 32 36.5C30.0241 36.5 28.2552 35.912 26.9924 34.9859C25.7292 34.0596 25 32.8212 25 31.5C25 30.1788 25.7292 28.9404 26.9924 28.0141C28.2552 27.088 30.0241 26.5 32 26.5C33.9759 26.5 35.7448 27.088 37.0076 28.0141C38.2708 28.9404 39 30.1788 39 31.5Z" fill="#CFCFCF" stroke="#CFCFCF"/>
+</svg>

@@ -1,0 +1,497 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@font-face {
+    font-family: Road;
+    src: url('../../assets/Brightside-Rough.ttf');
+}
+
+.hero {
+    width: 100%;
+    height: 43vw;
+    background: linear-gradient(90deg, #0D0D0D 0%, rgba(13, 13, 13, 0) 100%), url('../../assets/team 2.jpg') no-repeat center / cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.hero_content {
+    text-align: center;
+    padding-top: 5vmax;
+    padding-right: 45vmax;
+}
+
+.hero_content > h4 {
+    margin: 0;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    color: #FFFFFF;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    margin-bottom: 1.2rem;
+    min-width: max-content;
+}
+
+.hero_content > h2 {
+    margin: 0;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    color: #FFFFFF;
+    font-size: 3rem;
+    letter-spacing: -1.2px;
+    min-width: max-content;
+}
+
+h5 {
+    margin: 0;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    color: rgba(255, 251, 254, 0.8);
+    font-size: 1.2rem;
+    letter-spacing: -0.3px;
+    line-height: 2rem;
+    min-width: max-content;
+}
+
+.road {
+    font-family: Road;
+    font-weight: 400;
+    color: #FF7C00;
+    font-size: 6rem;
+    letter-spacing: -1.2px;
+}
+
+.know {
+    background-color: #0D0D0D;
+    padding: 8rem;
+    display: flex;
+    align-items: center;
+    gap: 8rem;
+}
+
+.atv {
+    background-color: #0D0D0D;
+    padding: 0 8rem;
+    display: flex;
+    align-items: center;
+    gap: 8rem;
+}
+
+.left_know > h2, .right_atv > h2, .news > h2 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 3rem;
+    letter-spacing: -1.2px;
+    color: #FFFFFF;
+    padding-bottom: 2rem;
+}
+
+.left_know > p, .right_atv > p, .news > p {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    letter-spacing: -0.3px;
+    color: rgba(255, 251, 254, 0.8);
+}
+
+.learnMore {
+    all: unset;
+    cursor: pointer;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.2rem;
+    line-height: 4rem;
+    letter-spacing: -0.2px;
+    color: #FF7C00;
+}
+
+.wheelImg {
+    padding-bottom: 1.5rem;
+}
+
+.knowImg {
+    width: 35vmax;
+    position: relative;
+    z-index: 2;
+}
+
+.gearImg {
+    position: absolute;
+    z-index: 0;
+    right: 0;
+    transform: translate(-10%, -50%);
+    overflow: hidden;
+}
+
+.atvImg {
+    width: 32rem;
+}
+
+.partner {
+    padding: 1rem 8rem;
+    background-color: #0D0D0D;
+}
+
+.partner > h2 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.8rem;
+    line-height: 5rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #969696;
+}
+
+.partLogo {
+    display: flex;
+    gap: 6rem;
+}
+
+.logoTitle {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.8rem;
+    line-height: 2.4rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #969696;
+}
+
+.news {
+    background-color: #0D0D0D;
+    padding: 8rem;
+    text-align: center;
+}
+
+.stats {
+    background-color: #0D0D0D;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 6rem;
+}
+
+.statLine1 {
+    display: flex;
+    text-align: center;
+    align-items: baseline;
+    justify-content: center;
+    gap: 6rem;
+    flex-wrap: wrap;
+}
+
+.statInfo {
+    text-align: center;
+}
+
+.statInfo > p {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 2rem;
+    letter-spacing: -0.3px;
+    color: rgba(255, 251, 254, 0.8);
+}
+
+.statInfo > h2 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 4rem;
+    line-height: 5rem;
+    letter-spacing: -1.6px;
+    color: #FF7C00;
+}
+
+.rollingStats {
+    background-color: #0D0D0D;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.tyreLeft {
+    width: 30vw;
+}
+
+.tyreRight {
+    width: 30vw;
+}
+
+.bajaStats {
+    background-color: #0D0D0D;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    width: 40vw;
+    height: 20rem;
+}
+
+.statContainer {
+    width: 100%;
+    height: 20rem;
+    flex: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    scroll-snap-align: start;
+}
+
+.statCard {
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    padding: 2rem 2.5rem;
+    width: 40vw;
+    justify-content: space-between;
+}
+
+.statDesc > p {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.85rem;
+    line-height: 1.5rem;
+    letter-spacing: -0.3px;
+    color: rgba(255, 251, 254, 0.5);
+    text-align: left;
+}
+
+.statDesc > h2 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 3rem;
+    letter-spacing: -0.3px;
+    color: rgba(255, 251, 254, 0.5);
+    text-align: left;
+}
+
+.statCardTitle {
+    position: absolute;
+    left: 50%;
+    transform: translate(150%, 300%);
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.85rem;
+    line-height: 1.5rem;
+    letter-spacing: -0.3px;
+    color: #FFFFFF;
+    text-align: left;
+}
+
+.statRank {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 6rem;
+    line-height: 5rem;
+    letter-spacing: -1.6px;
+    color: #FF7C00;
+}
+
+@media(max-width: 1280px) {
+    .statCardTitle {
+        transform: translate(100%, 300%);
+    }
+    .tyreLeft {
+        width: 25vw;
+    }
+    .tyreRight {
+        width: 25vw;
+    }
+    .bajaStats {
+        width: 50vw;
+    }
+    .statCard {
+        width: 50vw;
+    }
+}
+
+@media(max-width: 1000px) {
+    .bajaStats {
+        width: 60vw;
+    }
+    .statCard {
+        width: 60vw;
+    }
+    .tyreLeft {
+        width: 20vw;
+    }
+    .tyreRight {
+        width: 20vw;
+    }
+}
+
+@media(max-width: 1100px) {
+    .statCardTitle {
+        transform: translate(80%, 300%);
+    }
+    .hero_content {
+        padding-right: 25vmax;
+    }
+    .know, .news {
+        padding: 8rem 4rem;
+        gap: 4rem;
+    }
+    .atv {
+        padding: 0 4rem;
+        gap: 4rem;
+    }
+    .partner {
+        padding: 1rem 4rem;
+    }
+    .stats {
+        padding: 0 3rem;
+    }
+    .statLine1 {
+        gap: 4rem;
+    }
+}
+
+@media(max-width: 810px) {
+    .bajaStats {
+        width: 80vw;
+    }
+    .statCard {
+        width: 80vw;
+        padding: 2.2rem 1.5rem;
+    }
+    .tyreLeft {
+        width: 10vw;
+    }
+    .tyreRight {
+        width: 10vw;
+    }
+    .statCardTitle {
+        transform: translate(60%, 300%);
+    }
+    .hero_content > h2 {
+        font-size: 2rem;
+    }
+    .road {
+        font-size: 3rem;
+    }
+    h5 {
+        font-size: 1rem;
+    }
+    .know, .news {
+        flex-direction: column;
+        padding: 3rem;
+        gap: 3rem;
+    }
+    .atv {
+        flex-direction: column;
+        padding: 0 3rem;
+        gap: 3rem;
+    }
+    .partner {
+        padding: 1rem 3rem;
+    }
+    .knowImg {
+        width: 100%;
+    }
+    .wheelImg {
+        padding-bottom: 1rem;
+    }
+    .gearImg {
+        display: none;
+    }
+    .stats {
+        padding: 0 2rem;
+    }
+    .statLine1 {
+        gap: 3rem;
+    }
+    .statInfo > p {
+        font-size: 1rem;
+        line-height: 2rem;
+    }
+    .statInfo > h2 {
+        font-size: 2rem;
+        line-height: 2rem;
+    }
+    .statRank {
+        font-size: 4rem;
+        line-height: 3rem;
+    }
+}
+
+@media(max-width: 565px) {
+    .know, .news {
+        padding: 3rem 2rem;
+        gap: 2rem;
+    }
+    .atv {
+        padding: 0 2rem;
+        gap: 2rem;
+    }
+    .partner {
+        padding: 1rem 2rem;
+    }
+    .statLine1 {
+        all: unset;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 3rem;
+    }
+    .hero_content {
+        padding: 0;
+    }
+    .hero_content > h2 {
+        font-size: 1.5rem;
+    }
+    .road {
+        font-size: 2rem;
+    }
+    h5 {
+        font-size: 0.8rem;
+        line-height: 0.8rem;
+    }
+    .hero_content > h4 {
+        font-size: 0.6rem;
+        margin-bottom: 0.8rem;
+    }
+    .tyreLeft {
+        display: none;
+    }
+    .tyreRight {
+        display: none;
+    }
+    .bajaStats {
+        width: 90vw;
+    }
+    .statCard {
+        width: 90vw;
+        padding: 2.2rem 1rem;
+    }
+    .statDesc > p {
+        font-size: 0.6rem;
+        line-height: 1rem;
+    }
+    .statDesc > h2 {
+        font-size: 1.5rem;
+        line-height: 1.5rem;
+    }
+    .statCardTitle {
+        transform: translate(50%, 250%);
+    }
+}
