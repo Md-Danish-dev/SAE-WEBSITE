@@ -1,5 +1,6 @@
 import './App.css'
 import Home from './components/home/home'
+import Team from './components/team/team'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Navbar from './components/navbar'
 function App() {
@@ -10,6 +11,7 @@ function App() {
         <Navbar/>
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/team" element={<Team />} />
         </Routes>
       </BrowserRouter>
     </>
