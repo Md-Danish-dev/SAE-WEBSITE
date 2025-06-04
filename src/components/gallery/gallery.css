@@ -1,0 +1,19 @@
+@font-face {
+  font-family: 'Airstrike';
+  src: url('./assets/fonts/airstrike.ttf') format('truetype');
+}
+
+/* Custom styles for the carousel */
+.slick-slide {
+  opacity: 0.5;
+  transition: opacity 0.3s ease;
+}
+
+.slick-slide.slick-active {
+  opacity: 1;
+}
+
+.slick-track {
+  display: flex !important;
+  align-items: center;
+}
