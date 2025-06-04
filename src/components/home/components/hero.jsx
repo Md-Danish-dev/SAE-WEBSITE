@@ -1,4 +1,7 @@
-import React from 'react';
+import hero1 from '../../../assets/hero1.jpg';
+import hero2 from '../../../assets/hero2.jpg';
+import hero3 from '../../../assets/hero3.jpg';
+import hero4 from '../../../assets/hero4.jpg';
 
 const HeroSection = () => {
   return (
@@ -11,9 +14,9 @@ const HeroSection = () => {
       <div className="absolute top-32 left-32 transform">
         <div className="w-44 h-44 bg-cover bg-center" 
              style={{
-               backgroundImage: 'url(https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=400)',
                clipPath: 'polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%)'
              }}>
+              <img src={hero3} />
         </div>
       </div>
 
@@ -21,9 +24,9 @@ const HeroSection = () => {
       <div className="absolute top-32 right-32 transform">
         <div className="w-52 h-52 bg-cover bg-center" 
              style={{
-               backgroundImage: 'url(https://images.pexels.com/photos/162553/keys-workshop-mechanic-tools-162553.jpeg?auto=compress&cs=tinysrgb&w=400)',
                clipPath: 'polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%)'
              }}>
+              <img src={hero2} />
         </div>
       </div>
 
@@ -31,9 +34,10 @@ const HeroSection = () => {
       <div className="absolute bottom-32 left-32 transform">
         <div className="w-60 h-60 bg-cover bg-center" 
              style={{
-               backgroundImage: 'url(https://images.pexels.com/photos/358070/pexels-photo-358070.jpeg?auto=compress&cs=tinysrgb&w=400)',
+               backgroundImage: hero1,
                clipPath: 'polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%)'
              }}>
+              <img src={hero1} />
         </div>
       </div>
 
@@ -41,9 +45,9 @@ const HeroSection = () => {
       <div className="absolute bottom-32 right-32 transform">
         <div className="w-48 h-48 bg-cover bg-center" 
              style={{
-               backgroundImage: 'url(https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&cs=tinysrgb&w=400)',
                clipPath: 'polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%)'
              }}>
+              <img src={hero4} />
         </div>
       </div>
 
