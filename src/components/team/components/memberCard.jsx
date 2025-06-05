@@ -42,7 +42,7 @@ const ProfileCard = ({ imageUrl, name, title, linkedinUrl, emailUrl }) => {
             </div>
           </a>
         )}
-        {emailUrl && (
+        {(emailUrl !== false) && (
     <a 
       href={emailUrl??"Null"} 
       target="_blank" 
