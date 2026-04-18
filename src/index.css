@@ -15,3 +15,21 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.hexagon {
+  clip-path: polygon(
+    50% 0%,
+    93% 25%,
+    93% 75%,
+    50% 100%,
+    7% 75%,
+    7% 25%
+  );
+}
+
+@font-face {
+  font-family: 'Airstrike';
+  src: url('/font/airstrike/airstrike.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
