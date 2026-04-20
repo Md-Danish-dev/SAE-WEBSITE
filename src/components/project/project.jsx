@@ -1,126 +1,105 @@
 import React from "react";
-import image1 from "./../../assets/hero1.jpg"
+import image1 from "./../../assets/hero1.jpg";
 import Footer from "../footer/footer";
-
 
 const Projectpage = () => {
     const sections_for_ourprojects = [
         {
-            title : "Lorem ipsum dolor sit.",
-            description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae debitis id, officia rerum explicabo consectetur labore beatae velit, quod minus amet, esse eaque? Et ex deleniti quia excepturi quis a voluptates fuga tempora. Magni accusamus nihil modi quo commodi praesentium eaque ad optio, blanditiis, sed eveniet cumque consequatur quisquam consectetur quas quibusdam quasi reprehenderit nobis eius dignissimos doloribus aut esse. Pariatur consectetur ullam natus. Deleniti vero eius explicabo ea commodi excepturi porro, ",
-            photo1:image1,
-            photo2:image1,
-            photo3:image1
-        },
-        {
-            title : "Lorem ipsum dolor sit.",
-            description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae debitis id, officia rerum explicabo consectetur labore beatae velit, quod minus amet, esse eaque? Et ex deleniti quia excepturi quis a voluptates fuga tempora. Magni accusamus nihil modi quo commodi praesentium eaque ad optio, blanditiis, sed eveniet cumque consequatur quisquam consectetur quas quibusdam quasi reprehenderit nobis eius dignissimos doloribus aut esse. Pariatur consectetur ullam natus. Deleniti vero eius explicabo ea commodi excepturi porro, ",
-            photo1:image1,
-            photo2:image1,
-            photo3:image1
-        },
-        {
-            title : "Lorem ipsum dolor sit.",
-            description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae debitis id, officia rerum explicabo consectetur labore beatae velit, quod minus amet, esse eaque? Et ex deleniti quia excepturi quis a voluptates fuga tempora. Magni accusamus nihil modi quo commodi praesentium eaque ad optio, blanditiis, sed eveniet cumque consequatur quisquam consectetur quas quibusdam quasi reprehenderit nobis eius dignissimos doloribus aut esse. Pariatur consectetur ullam natus. Deleniti vero eius explicabo ea commodi excepturi porro, ",
-            photo1:image1,
-            photo2:image1,
-            photo3:image1
+            title: "Lorem ipsum dolor sit.",
+            description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae debitis id, officia rerum explicabo consectetur labore beatae velit, quod minus amet, esse eaque? Et ex deleniti quia excepturi quis a voluptates fuga tempora. Magni accusamus nihil modi quo commodi praesentium eaque ad optio, blanditiis, sed eveniet cumque consequatur quisquam consectetur quas quibusdam quasi reprehenderit nobis eius dignissimos doloribus aut esse.",
+            photo1: image1, photo2: image1, photo3: image1
         }
-    ]
-    const section_for_upcomingprojects=[
-        {
-            title : "Lorem ipsum dolor sit.",
-            description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae debitis id, officia rerum explicabo consectetur labore beatae velit, quod minus amet, esse eaque? Et ex deleniti quia excepturi quis a voluptates fuga tempora. Magni accusamus nihil modi quo commodi praesentium eaque ad optio, blanditiis, sed eveniet cumque consequatur quisquam consectetur quas quibusdam quasi reprehenderit nobis eius dignissimos doloribus aut esse. Pariatur consectetur ullam natus. Deleniti vero eius explicabo ea commodi excepturi porro, ",
-            photo1:image1,
-            photo2:image1,
-            photo3:image1
-        }
-    ]
+    ];
 
-    return(
-        <div className="bg-black min-h-screen w-full">
-            <h1 className="text-blue-400 md:pt-[50px] md:pl-[100px] md:text-[40px] md:font-[400] font-['Airstrike'] pt-[20px] pl-[40px] text-[16px] font-[160px] " >OUR PROJECTTS</h1>
-            <div>
-                {
-                    sections_for_ourprojects.map((sec,i) =>(
-                        <div key = {i} className="flex flex-row  md:gap-[300px] gap-8 mt-10 md:mt-[100px] justify-center ">
-                            {/* images */}
-                            <div className="flex md:ml-[100px] pl-[40px]">
-                                    <div  className="hexagon md:w-[250px] md:h-[250px] overflow-hidden w-[50px] h-[50px] " >
-                                        <img className="w-full h-full object-cover" src={sec.photo1} alt="" />
-                                    </div>  
-                                    <div  className="hexagon md:w-[200px] md:h-[200px] overflow-hidden md:mt-[180px] md:ml-[-30px] mt-[40px] ml-[-12px] w-[40px] h-[40px] " >
-                                        <img className="w-full h-full object-cover" src={sec.photo2} alt="" />
-                                    </div>  
-                                    <div  className="hexagon md:w-[150px] md:h-[150px] overflow-hidden md:mt-[300px] md:ml-[-370px] w-[30px] h-[30px] mt-[60px] ml-[-70px] " >
-                                        <img className="w-full h-full object-cover" src={sec.photo3} alt="" />
-                                    </div>  
-                            </div>
-                            <div>
-                                <h1 className="text-red-500 md:text-[25px] font-bold text-[10px] pl-[20px] ">{sec.title}</h1>
-                                <p  className="text-white md:pr-[100px] md:mt-[40px] md:text-[25px] font-thin text-[6px] pr-[8px] mt-[10px] pl-[20px] ">{sec.description}</p>
+    return (
+        <div className="bg-black min-h-screen w-full overflow-x-hidden">
+            <h1 className="text-blue-400 font-['Airstrike'] pt-[40px] pl-[40px] xl:pt-[60px] xl:pl-[100px] text-[28px] md:text-[40px]">
+                OUR PROJECTS
+            </h1>
+
+            <div className="flex flex-col gap-24">
+                {sections_for_ourprojects.map((sec, i) => (
+                    <div 
+                        key={i} 
+                        // We use 'xl' (1280px) to switch to row. 
+                        // Anything smaller than 1280px stays in a column to prevent ANY overlap.
+                        className="flex flex-col xl:flex-row items-center xl:items-start xl:justify-between mt-10 px-6 xl:px-[100px]"
+                    >
+                        <div className="
+    flex flex-row flex-shrink-0
+    xl:scale-100 xl:origin-left
+
+    /* MOBILE + TABLET FIX */
+    max-xl:w-full
+    max-xl:scale-100
+    max-xl:h-auto
+    max-xl:gap-3
+    max-xl:justify-between
+">
+    <div className="
+        hexagon overflow-hidden flex-shrink-0
+        max-xl:w-[32%] max-xl:aspect-square
+        xl:w-[250px] xl:h-[250px]
+    ">
+        <img className="w-full h-full object-cover" src={sec.photo1} alt="" />
+    </div>
+
+    <div className="
+        hexagon overflow-hidden flex-shrink-0
+        max-xl:w-[32%] max-xl:aspect-square
+        max-xl:mt-0 max-xl:ml-0
+        xl:w-[200px] xl:h-[200px] xl:mt-[180px] xl:ml-[-30px]
+    ">
+        <img className="w-full h-full object-cover" src={sec.photo2} alt="" />
+    </div>
+
+    <div className="
+        hexagon overflow-hidden flex-shrink-0
+        max-xl:w-[32%] max-xl:aspect-square
+        max-xl:mt-0 max-xl:ml-0
+        xl:w-[150px] xl:h-[150px] xl:mt-[300px] xl:ml-[-370px]
+    ">
+        <img className="w-full h-full object-cover" src={sec.photo3} alt="" />
+    </div>
+</div>
+                        <div className="w-full xl:max-w-[600px] mt-10 xl:mt-0">
+                            <h1 className="text-red-500 text-[24px] md:text-[32px] font-bold text-center xl:text-left">
+                                {sec.title}
+                            </h1>
+                            <p className="text-white text-[16px] md:text-[20px] font-thin mt-6 leading-relaxed text-justify xl:text-left">
+                                {sec.description}
+                            </p>
+                        </div>
+                    </div>
+                ))}
+            </div>
+
+            {/* Achievements Section */}
+            <div className="mt-32">
+                <h1 className="text-blue-400 font-['Airstrike'] pl-[40px] xl:pl-[100px] text-[28px] md:text-[40px]">
+                    ACHIEVEMENTS
+                </h1>
+                
+                <div className="flex flex-wrap justify-center xl:justify-between px-6 xl:px-[150px] gap-12 mt-12 pb-20">
+                    {[
+                        { rank: "13", event: "SAE ADC" },
+                        { rank: "2", event: "Agrone Cognizance 2022" },
+                        { rank: "56", event: "SAE Aerothon 2021" }
+                    ].map((item, index) => (
+                        <div key={index} className="flex flex-col items-center">
+                            <h1 className="text-white text-[40px] font-['Airstrike']">{item.rank}</h1>
+                            <h6 className="text-white font-bold text-[10px] uppercase tracking-widest">Rank</h6>
+                            <div className="bg-[#141234] border border-blue-900 mt-4 px-10 py-3 rounded-lg text-white text-[18px] md:text-[22px]">
+                                {item.event}
                             </div>
                         </div>
-                    ))
-                }
-            </div>
-            {/*this one is for upcoming project */}
-            <h1 className="text-blue-400 md:pt-[50px] md:pl-[100px] md:text-[40px] md:font-[400] font-['Airstrike'] pt-[20px] pl-[40px] text-[16px] font-[160px] " >UPCOMING PROJECTS</h1>
-            <div>
-                {
-                    section_for_upcomingprojects.map((sec,i) =>(
-                        <div key = {i} className="flex flex-row  md:gap-[300px] gap-8 mt-10 md:mt-[100px] justify-center ">
-                            {/* images */}
-                            <div className="flex md:ml-[100px] pl-[40px]">
-                                    <div  className="hexagon md:w-[250px] md:h-[250px] overflow-hidden w-[50px] h-[50px] " >
-                                        <img className="w-full h-full object-cover" src={sec.photo1} alt="" />
-                                    </div>  
-                                    <div  className="hexagon md:w-[200px] md:h-[200px] overflow-hidden md:mt-[180px] md:ml-[-30px] mt-[40px] ml-[-12px] w-[40px] h-[40px] " >
-                                        <img className="w-full h-full object-cover" src={sec.photo2} alt="" />
-                                    </div>  
-                                    <div  className="hexagon md:w-[150px] md:h-[150px] overflow-hidden md:mt-[300px] md:ml-[-370px] w-[30px] h-[30px] mt-[60px] ml-[-70px] " >
-                                        <img className="w-full h-full object-cover" src={sec.photo3} alt="" />
-                                    </div>  
-                            </div>
-                            <div>
-                                <h1 className="text-red-500 md:text-[25px] font-bold text-[10px] pl-[20px] ">{sec.title}</h1>
-                                <p  className="text-white md:pr-[100px] md:mt-[40px] md:text-[25px] font-thin text-[6px] pr-[8px] mt-[10px] pl-[20px] ">{sec.description}</p>
-                            </div>
-                        </div>
-                    ))
-                }
+                    ))}
+                </div>
             </div>
 
-           <h1 className="text-blue-400 md:pt-[50px] md:pl-[100px] md:text-[40px] md:font-[400] font-['Airstrike'] pt-[20px] pl-[40px] text-[16px] font-[160px] " >ACHIEVEMENTS</h1>
-            <div className="flex justify-between md:px-[150px] px-[10px] gap-[10px]">
-                <div className="">
-                    <div className="flex flex-col items-center md:mt-[50px] mt-[20px]">
-                        <h1 className="text-white  md:text-[35px] font-[400] font-['Airstrike'] text-[14px]  " >13</h1>
-                        <h6 className="text-white font-bold md:text-[10px] pt-0 text-[6px]" >Rank</h6>
-                        <div className="bg-[#141234] w-fit md:px-[40px] md:py-[5px] md:rounded-[8px] text-center md:mt-[40px] text-white px-[16px] py-[2px] rounded-[3.6px] mt-[10px] md:text-[20px] text-[10px] whitespace-nowrap md:whitespace-normal">SAE ADC </div>
-                    </div> 
-                </div>
-                <div className="">
-                    <div className="flex flex-col items-center md:mt-[50px] mt-[20px]">
-                        <h1 className="text-white  md:text-[35px] font-[400] font-['Airstrike'] text-[14px]  " >2</h1>
-                        <h6 className="text-white font-bold md:text-[10px] pt-0 text-[6px]" >Rank</h6>
-                        <div className="bg-[#141234] w-fit md:px-[40px] md:py-[5px] md:rounded-[8px] text-center md:mt-[40px] text-white px-[16px] py-[2px] rounded-[3.6px] mt-[10px] md:text-[20px] text-[10px] whitespace-nowrap md:whitespace-normal">Agrone Cognizance 2022</div>
-                    </div> 
-                </div>
-                <div className="">
-                    <div className="flex flex-col items-center md:mt-[50px] mt-[20px]">
-                        <h1 className="text-white  md:text-[35px] font-[400] font-['Airstrike'] text-[14px]  " >56</h1>
-                        <h6 className="text-white font-bold md:text-[10px] pt-0 text-[6px]" >Rank</h6>
-                        <div className="bg-[#141234] w-fit md:px-[40px] md:py-[5px] md:rounded-[8px] text-center md:mt-[40px] text-white px-[16px] py-[2px] rounded-[3.6px] mt-[10px] md:text-[20px] text-[10px] whitespace-nowrap md:whitespace-normal">SAE Aerothon 2021</div>
-                    </div> 
-                </div>
-            </div>
-           <div className="mt-[100px]">
-                <Footer/>
-           </div>
-
+            <Footer />
         </div>
-    )
-}
+    );
+};
 
-export default Projectpage
+export default Projectpage;
