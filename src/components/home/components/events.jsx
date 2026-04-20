@@ -38,11 +38,11 @@ const EventsComponent = () => {
           <div key={event.id} className="flex flex-col lg:flex-row items-center gap-8">
             {/* Image Container */}
             <div className="flex-shrink-0 w-full lg:w-96">
-              <div className="bg-gray-800 p-4 rounded-lg">
+              <div className=" p-4 rounded-lg">
                 <img
                   src={event.image}
                   alt={event.title}
-                  className="w-full h-64 object-cover rounded"
+                  className="w-full h-64 object-contain rounded"
                 />
               </div>
             </div>

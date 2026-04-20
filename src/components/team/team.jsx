@@ -147,7 +147,7 @@ const eighthRow = [
 
 
   return (
-    <div className="min-h-screen bg-black relative overflow-hidden p-8">
+    <div className="min-h-screen bg-black relative overflow-hidden p-8 flex flex-col gap-16">
       <Section members={firstRow} />
       <Section members={secondRow} />
       <Section members={thirdRow} />
@@ -157,8 +157,8 @@ const eighthRow = [
       <Section members={seventhRow} />
       <Section members={eighthRow} />
 
-      <div className="absolute bottom-0 left-0 right-0 text-center text-gray-500 text-sm p-4">
-        © 2023 Team Profile. All rights reserved.
+      <div className=" bottom-0 left-0 right-0 mt-2 text-center text-gray-500 text-sm p-4">
+        <h1>© 2023 Team Profile. All rights reserved.</h1>
       </div>
 
     </div>

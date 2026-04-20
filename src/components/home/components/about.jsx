@@ -5,7 +5,6 @@ import CarouselImage1 from '../../../assets/Carousel 1.png';
 const AboutUsCarousel = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   
-  // Sample images - you can replace these with your actual images
   const images = [
     CarouselImage1,
     CarouselImage1,
@@ -32,26 +31,30 @@ const AboutUsCarousel = () => {
       </h1>
 
       {/* Carousel Container */}
-      <div className="relative w-full max-w-4xl mb-8">
-        {/* Main Image */}
-        <div className="relative overflow-hidden rounded-lg">
+      <div className="relative w-full max-w-5xl mb-8"> 
+        {/* Main Image Container */}
+        <div className="relative overflow-hidden rounded-lg bg-zinc-900/30 flex items-center justify-center">
           <img
             src={images[currentSlide]}
             alt={`Team photo ${currentSlide + 1}`}
-            className="w-full h-80 md:h-96 object-cover"
+            /* 1. h-auto + w-full: maintains natural ratio
+               2. max-h-[500px] or [600px]: keeps it from getting too tall on desktop
+               3. object-contain: ensures no part of the image is cut off
+            */
+            className="w-full h-auto max-h-[500px] md:max-h-[600px] object-contain" 
           />
           
           {/* Navigation Arrows */}
           <button
             onClick={prevSlide}
-            className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 hover:bg-opacity-70 text-white p-2 rounded-full transition-all duration-200"
+            className="absolute left-4 top-1/2 -translate-y-1/2 bg-black/40 hover:bg-blue-400/20 text-white p-2 md:p-3 rounded-full transition-all duration-200 backdrop-blur-sm"
           >
             <ChevronLeft size={24} />
           </button>
           
           <button
             onClick={nextSlide}
-            className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 hover:bg-opacity-70 text-white p-2 rounded-full transition-all duration-200"
+            className="absolute right-4 top-1/2 -translate-y-1/2 bg-black/40 hover:bg-blue-400/20 text-white p-2 md:p-3 rounded-full transition-all duration-200 backdrop-blur-sm"
           >
             <ChevronRight size={24} />
           </button>
@@ -63,10 +66,10 @@ const AboutUsCarousel = () => {
             <button
               key={index}
               onClick={() => goToSlide(index)}
-              className={`w-3 h-3 rounded-full transition-all duration-200 ${
+              className={`h-1.5 transition-all duration-300 rounded-full ${
                 index === currentSlide
-                  ? 'bg-blue-400'
-                  : 'bg-gray-600 hover:bg-gray-400'
+                  ? 'w-6 bg-blue-400'
+                  : 'w-2 bg-gray-700 hover:bg-gray-500'
               }`}
             />
           ))}
